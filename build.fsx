@@ -8,6 +8,7 @@ let bt =
                 r.Assembly "System.Web"
                 r.NuGet("WebSharper.Google.Maps").Reference()
             ])
+    |> fun bt -> bt.WithFramework(bt.Framework.Net40)
 
 let main =
     bt.WebSharper.Extension("IntelliFactory.WebSharper.Google.Maps.MarkerClusterer")

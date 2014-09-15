@@ -47,7 +47,7 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <Import Project="../packages/WebSharper.2.5.125.62/build/WebSharper.targets" />
-  <Import Project="../build/net45/$(Name).proj" />
+  <Import Project="../build/net40/$(Name).proj" />
   <ItemGroup>
     <Compile Include="Definition.fs" />
     <EmbeddedResource Include="markerclusterer_compiled.js" />
