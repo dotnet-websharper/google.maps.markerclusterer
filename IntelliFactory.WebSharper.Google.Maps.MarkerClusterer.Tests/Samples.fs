@@ -1,10 +1,10 @@
-﻿namespace IntelliFactory.WebSharper.GlMatrix.Tests
+﻿namespace IntelliFactory.WebSharper.Google.Maps.MarkerClusterer.Tests
 
 open IntelliFactory.WebSharper
 
 module GoogleMaps =
-    open IntelliFactory.WebSharper.EcmaScript
-    open IntelliFactory.WebSharper.Html
+    open IntelliFactory.WebSharper.JavaScript
+    open IntelliFactory.WebSharper.Html.Client
     open IntelliFactory.WebSharper.Google.Maps
     open IntelliFactory.WebSharper.Google.Maps.MarkerClusterer
     
@@ -74,7 +74,7 @@ type Action = | Index
 
 module Site =
 
-    open IntelliFactory.Html
+    open IntelliFactory.WebSharper.Html.Server
 
     let HomePage =
         Content.PageContent <| fun ctx ->
