@@ -1,12 +1,12 @@
-﻿namespace IntelliFactory.WebSharper.Google.Maps.MarkerClusterer.Tests
+﻿namespace WebSharper.Google.Maps.MarkerClusterer.Tests
 
-open IntelliFactory.WebSharper
+open WebSharper
 
 module GoogleMaps =
-    open IntelliFactory.WebSharper.JavaScript
-    open IntelliFactory.WebSharper.Html.Client
-    open IntelliFactory.WebSharper.Google.Maps
-    open IntelliFactory.WebSharper.Google.Maps.MarkerClusterer
+    open WebSharper.JavaScript
+    open WebSharper.Html.Client
+    open WebSharper.Google.Maps
+    open WebSharper.Google.Maps.MarkerClusterer
     
     [<JavaScript>]
     let Sample buildMap =
@@ -68,13 +68,13 @@ type GoogleMapsViewer() =
     [<JavaScript>]
     override this.Body = GoogleMaps.Main () :> _
 
-open IntelliFactory.WebSharper.Sitelets
+open WebSharper.Sitelets
 
 type Action = | Index
 
 module Site =
 
-    open IntelliFactory.WebSharper.Html.Server
+    open WebSharper.Html.Server
 
     let HomePage =
         Content.PageContent <| fun ctx ->

@@ -11,12 +11,12 @@ let bt =
     |> fun bt -> bt.WithFramework(bt.Framework.Net40)
 
 let main =
-    bt.WebSharper.Extension("IntelliFactory.WebSharper.Google.Maps.MarkerClusterer")
+    bt.WebSharper.Extension("WebSharper.Google.Maps.MarkerClusterer")
         .Embed(["markerclusterer_compiled.js"])
         .SourcesFromProject()
 
 let test =
-    bt.WebSharper.HtmlWebsite("IntelliFactory.WebSharper.Google.Maps.MarkerClusterer.Tests")
+    bt.WebSharper.HtmlWebsite("WebSharper.Google.Maps.MarkerClusterer.Tests")
         .SourcesFromProject()
         .References(fun r -> [r.Project main])
 

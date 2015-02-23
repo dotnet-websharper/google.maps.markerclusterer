@@ -1,9 +1,9 @@
-﻿namespace IntelliFactory.WebSharper.Google.Maps.MarkerClusterer
-open IntelliFactory.WebSharper.InterfaceGenerator
+﻿namespace WebSharper.Google.Maps.MarkerClusterer
+open WebSharper.InterfaceGenerator
 
 module Definition =
-    open IntelliFactory.WebSharper.InterfaceGenerator.Type
-    open IntelliFactory.WebSharper.Google.Maps
+    open WebSharper.InterfaceGenerator.Type
+    open WebSharper.Google.Maps
 
     let resource = Resource "Js" "markerclusterer_compiled.js"
 
@@ -47,10 +47,10 @@ module Definition =
 
     let MarkerClusterer =
         Class "MarkerClusterer"
-        |+> [
+        |+> Static [
                 Constructor (T<Map>?map * (!? (Type.ArrayOf T<Marker>)?opt_markers) * (!? MarkerClustererOptions?opt_options))
             ]
-        |+> Protocol [
+        |+> Instance [
                 "addMarker"         => T<Marker>?marker * (!? T<bool>?opt_nodraw) ^-> T<unit>
                 "addMarkers"        => (Type.ArrayOf T<Marker>)?markers * (!? T<bool>?opt_nodraw) ^-> T<unit>
                 "clearMarkers"      => T<unit> ^-> T<unit>
@@ -77,10 +77,10 @@ module Definition =
 
     let Assembly =
         Assembly [
-            Namespace "IntelliFactory.WebSharper.Google.Maps.MarkerClusterer.Resources" [
+            Namespace "WebSharper.Google.Maps.MarkerClusterer.Resources" [
                 resource
             ]
-            Namespace "IntelliFactory.WebSharper.Google.Maps.MarkerClusterer" [
+            Namespace "WebSharper.Google.Maps.MarkerClusterer" [
                  Style
                  MarkerClustererOptions
                  CalculatorResult
