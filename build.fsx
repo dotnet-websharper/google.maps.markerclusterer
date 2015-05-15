@@ -2,13 +2,14 @@
 open IntelliFactory.Build
 
 let bt =
-    BuildTool().PackageId("WebSharper.Google.Maps.MarkerClusterer", "3.0")
+    BuildTool().PackageId("WebSharper.Google.Maps.MarkerClusterer")
+        .VersionFrom("WebSharper")
+        .WithFramework(fun fw -> fw.Net40)
         .References(fun r ->
             [
                 r.Assembly "System.Web"
                 r.NuGet("WebSharper.Google.Maps").Reference()
             ])
-    |> fun bt -> bt.WithFramework(bt.Framework.Net40)
 
 let main =
     bt.WebSharper.Extension("WebSharper.Google.Maps.MarkerClusterer")
