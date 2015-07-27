@@ -76,11 +76,11 @@ module Site =
 
     open WebSharper.Html.Server
 
-    let HomePage =
-        Content.PageContent <| fun ctx ->
-            { Page.Default with
-                Title = Some "WebSharper Google Maps Marker Clusterer Tests"
-                Body = [Div [new GoogleMapsViewer()]] }
+    let HomePage ctx =
+        Content.Page(
+            Title = "WebSharper Google Maps Marker Clusterer Tests",
+            Body = [Div [new GoogleMapsViewer()]]
+        )
 
     let Main = Sitelet.Content "/" Index HomePage
 
