@@ -9,7 +9,7 @@ let bt =
         .References(fun r ->
             [
                 r.Assembly "System.Web"
-                r.NuGet("Zafir.Google.Maps").Reference()
+                r.NuGet("Zafir.Google.Maps").Latest(true).ForceFoundVersion().Reference()
             ])
 
 let main =
@@ -23,7 +23,7 @@ let test =
         .References(fun r ->
             [
                 r.Project main
-                r.NuGet("Zafir.Html").Reference()
+                r.NuGet("Zafir.Html").Latest(true).ForceFoundVersion().Reference()
             ])
 
 bt.Solution [
