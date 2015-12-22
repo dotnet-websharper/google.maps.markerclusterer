@@ -35,7 +35,7 @@ bt.Solution [
             { c with
                 Title = Some "Zafir.Google.Maps.MarkerClusterer-3.0"
                 LicenseUrl = Some "http://websharper.com/licensing"
-                ProjectUrl = Some "https://github.com/intellifactory/websharper.google.maps.markerclusterer"
+                ProjectUrl = Some "https://github.com/intellifactory/zafir.google.maps.markerclusterer"
                 Description = "Zafir Extensions for Google Maps MarkerClusterer 3.0"
                 RequiresLicenseAcceptance = true })
         .Add(main)
