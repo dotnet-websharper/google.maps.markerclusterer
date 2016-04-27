@@ -52,7 +52,7 @@ module GoogleMaps =
                     guard := false
                     addMarkers()
                 else ()
-            Event.AddListener(map, "bounds_changed", tryAddMarkers) |> ignore
+            Event.AddListener(map, "bounds_changed", As tryAddMarkers) |> ignore
 
     [<JavaScript>]
     let Main ()=

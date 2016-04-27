@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "IntelliFactory.WebSharper.Google.Maps.MarkerClusterer", "IntelliFactory.WebSharper.Google.Maps.MarkerClusterer\IntelliFactory.WebSharper.Google.Maps.MarkerClusterer.fsproj", "{730AE40A-001C-4137-972D-898DC7C2BF0A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebSharper.Google.Maps.MarkerClusterer", "WebSharper.Google.Maps.MarkerClusterer\WebSharper.Google.Maps.MarkerClusterer.fsproj", "{730AE40A-001C-4137-972D-898DC7C2BF0A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "IntelliFactory.WebSharper.Google.Maps.MarkerClusterer.Tests", "IntelliFactory.WebSharper.Google.Maps.MarkerClusterer.Tests\IntelliFactory.WebSharper.Google.Maps.MarkerClusterer.Tests.fsproj", "{BB42AD3F-9110-4D95-A23F-36B4F2F900FA}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebSharper.Google.Maps.MarkerClusterer.Tests", "WebSharper.Google.Maps.MarkerClusterer.Tests\WebSharper.Google.Maps.MarkerClusterer.Tests.fsproj", "{BB42AD3F-9110-4D95-A23F-36B4F2F900FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
