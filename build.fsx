@@ -9,7 +9,7 @@ let bt =
         .References(fun r ->
             [
                 r.Assembly "System.Web"
-                r.NuGet("WebSharper.Google.Maps").Reference()
+                r.NuGet("WebSharper.Google.Maps").ForceFoundVersion().Reference()
             ])
 
 let main =
