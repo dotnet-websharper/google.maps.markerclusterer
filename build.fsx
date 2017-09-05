@@ -3,13 +3,13 @@ open IntelliFactory.Build
 
 let bt =
     BuildTool().PackageId("WebSharper.Google.Maps.MarkerClusterer")
-        .VersionFrom("WebSharper")
+        .VersionFrom("WebSharper", versionSpec = "(,4.0)")
         .WithFSharpVersion(FSharpVersion.FSharp30)
         .WithFramework(fun fw -> fw.Net40)
         .References(fun r ->
             [
                 r.Assembly "System.Web"
-                r.NuGet("WebSharper.Google.Maps").ForceFoundVersion().Reference()
+                r.NuGet("WebSharper.Google.Maps").Version("(,4.0)").ForceFoundVersion().Reference()
             ])
 
 let main =
@@ -23,7 +23,7 @@ let test =
         .References(fun r ->
             [
                 r.Project main
-                r.NuGet("WebSharper.Html").Reference()
+                r.NuGet("WebSharper.Html").Version("(,4.0)").Reference()
             ])
 
 bt.Solution [
