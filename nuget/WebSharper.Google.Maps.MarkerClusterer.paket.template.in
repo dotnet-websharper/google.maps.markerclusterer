@@ -1,0 +1,20 @@
+type file
+id WebSharper.Google.Maps.MarkerClusterer
+authors
+    IntelliFactory
+owners
+    IntelliFactory
+licenseUrl http://websharper.com/licensing
+projectUrl https://github.com/intellifactory/zafir.google.maps.markerclusterer
+description
+    WebSharper Extensions for Google Maps MarkerClusterer 3.0
+tags
+    Web JavaScript F# C#
+files
+    ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/netstandard2.0/WebSharper.Google.Maps.MarkerClusterer.dll ==> lib/netstandard2.0
+    ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/netstandard2.0/WebSharper.Google.Maps.MarkerClusterer.xml ==> lib/netstandard2.0
+dependencies
+        WebSharper.Google.Maps ~> LOCKEDVERSION/3
+        WebSharper ~> LOCKEDVERSION/3
+frameworkAssemblies
+        System.Web
