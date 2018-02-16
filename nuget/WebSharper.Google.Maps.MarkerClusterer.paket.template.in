@@ -11,8 +11,8 @@ description
 tags
     Web JavaScript F# C#
 files
-    ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/netstandard2.0/WebSharper.Google.Maps.MarkerClusterer.dll ==> lib/net461
-    ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/netstandard2.0/WebSharper.Google.Maps.MarkerClusterer.xml ==> lib/net461
+    ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/net461/WebSharper.Google.Maps.MarkerClusterer.dll ==> lib/net461
+    ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/net461/WebSharper.Google.Maps.MarkerClusterer.xml ==> lib/net461
     ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/netstandard2.0/WebSharper.Google.Maps.MarkerClusterer.dll ==> lib/netstandard2.0
     ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/netstandard2.0/WebSharper.Google.Maps.MarkerClusterer.xml ==> lib/netstandard2.0
 dependencies
