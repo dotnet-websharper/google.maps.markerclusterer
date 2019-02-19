@@ -17,6 +17,6 @@ files
     ../WebSharper.Google.Maps.MarkerClusterer/bin/Release/netstandard2.0/WebSharper.Google.Maps.MarkerClusterer.xml ==> lib/netstandard2.0
 dependencies
         WebSharper.Google.Maps ~> 4.5.1
-        WebSharper ~> 4.5.5
+        WebSharper ~> 4.5.8
 frameworkAssemblies
         System.Web
