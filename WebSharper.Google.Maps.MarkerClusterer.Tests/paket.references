@@ -1,5 +1,6 @@
 WebSharper.Google.Maps
 WebSharper
 WebSharper.FSharp
-WebSharper.Html
+WebSharper.UI
+WebSharper.AspNetCore
 FSharp.Core
